@@ -24,35 +24,38 @@ This project is an interactive **Finance Analysis Dashboard** developed in **Pow
 
 ---
 
+## Business Requirements
+
+The management team requires a centralized dashboard to monitor financial performance and support data-driven decision-making. The key business requirements include:
+
+- Track overall transaction growth and financial performance.
+- Monitor monthly trends in transaction amounts.
+- Analyze successful, failed, and pending transactions.
+- Evaluate customer segment contribution to total transactions.
+- Compare financial performance across different states.
+- Analyze transaction type profitability and distribution.
+- Understand gender-based customer transaction behavior.
+- Measure Year-over-Year (YoY) changes in financial performance.
+
+---
+
+
 ## Dataset Used
 
 The dashboard is built using the following datasets:
 
 ### 1. finance_transaction.csv
-Contains transaction-level information including:
-- Transaction Amount
-- Transaction Type
-- Transaction Status
-- Tax
-- Fee
-- Transaction Date
-- Customer ID
+Contains 50000+ records  transactions information
+
 
 ### 2. customer.csv
-Contains customer-related information including:
-- Customer ID
-- Gender
-- Occupation
-- State
-- Customer Segment
+Contains 5000+ records customer-related information 
 
 ### 3. calendar_table
 Custom calendar table created for:
 - Time Series Analysis
 - Year-wise Analysis
 - Month-wise Analysis
-- Date Intelligence Calculations
-
 ---
 
 ## Data Model
@@ -62,17 +65,13 @@ The dashboard follows a simple star schema:
 - `finance_transaction.csv` ↔ `customer.csv` using Customer ID
 - `finance_transaction.csv` ↔ `calendar_table` using Transaction Date
 
-This structure enables efficient filtering and accurate reporting across multiple dimensions.
-
----
+--
 
 # Dashboard Overview
 
 ## Page 1: Overview Dashboard
 
-**File:** `Dashboard_Main.png`
-
-The Overview page provides a high-level summary of financial performance and key business metrics.
+**File:** `Dashboard_main.png`
 
 ### Key Features
 
@@ -87,7 +86,6 @@ The Overview page provides a high-level summary of financial performance and key
 - State-wise Transaction Analysis
 - Gender-wise Analysis
 - Dynamic Measure Selection
-- Interactive Slicers and Filters
 
 ### Dashboard Preview
 
@@ -97,9 +95,7 @@ The Overview page provides a high-level summary of financial performance and key
 
 ## Page 2: Transaction Details Dashboard
 
-**File:** `Dashboard_Transaction_Details.png`
-
-The Transaction Details page provides detailed transaction-level insights for deeper analysis.
+**File:** `Dashbaord_Transaction_details.png`
 
 ### Key Features
 
@@ -136,6 +132,13 @@ The Transaction Details page provides detailed transaction-level insights for de
 - Total Fee
 - Dynamic KPI Measures
 
+### Interactive Features
+- Drill Down
+- Custom Tooltips
+- Page Navigator
+- Dynamic Slicers
+- Cross Filtering
+
 ### Visualizations
 - KPI Cards
 - Line Charts
@@ -161,8 +164,6 @@ The Transaction Details page provides detailed transaction-level insights for de
 - Power BI Desktop
 - Power Query
 - DAX
-- Data Modeling
-- CSV Files
 
 ---
 
@@ -177,7 +178,7 @@ Finance-Analysis-Dashboard/
 ├── Dashboard_Main.png
 ├── Dashboard_Transaction_Details.png
 ├── README.md
-└── assets/
+└── images/
 ```
 
 ---
