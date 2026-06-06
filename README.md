@@ -112,7 +112,7 @@ The Transaction Details page provides detailed transaction-level insights for de
 
 ### Dashboard Preview
 
-![Transaction Details Dashboard](Dashboard_Transaction_details.png)
+![Transaction Details Dashboard](Dashbaord_Transaction_details.png)
 
 ---
 
