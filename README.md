@@ -138,6 +138,7 @@ The dashboard follows a simple star schema:
 - Page Navigator
 - Dynamic Slicers
 - Cross Filtering
+- Parameters
 
 ### Visualizations
 - KPI Cards
